@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+    <html lang = "pl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="main.css">
+         <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"/>
+        -->
+        <script src="main1.js"></script>
+        <script src="https://kit.fontawesome.com/3907115f57.js" crossorigin="anonymous"></script>
+        <title>System zarządzanie studentami</title>
+    </head>
+    <body onload = "afterPageLoading()">
+        <div class="container">
+            <div class="headline">
+                <h1>System informacji o studiach</h1>
+            </div>
+            <div class="wrapper">
+                <div class="sidebar">
+                    <div class="headline2">
+                        <h2>Dostępne funkcje</h2>
+                    </div>
+                    <ul id="all_students_button" >
+                        <li id="all_students" ><a href="#"><i class="fas fa-globe"></i></a> Wyświetl wszystkich studentów</li>
+                    </ul>
+                    <br>
+                    <div class="help_headline">
+                        <h3>Podaj niezbędne informacje</h3>
+                        <br>
+                    </div>
+                    <label for="name_surname">Imię i nazwisko studenta:</label>
+                    <select name="name_surname" id="name_surname">
+                        <option value=null>None</option>
+                    </select>
+                    <br><br>
+                    <label for="name_subject">Nazwa przedmiotu:</label>
+                    <select name="name_subject" id="name_subject">
+                        <option value=null>None</option>
+                        
+                    </select>
+                    <br><br>
+                       <label for="year">Rok:</label>
+                       <select name="year_value" id="year_value">
+                        <option value=null>None</option>
+                        </select>
+                    <br><br>
+                    <div class="help_headline2">
+                        <h3>Wybierz jedną z opcji:</h3>
+                        <br>
+                    </div>
+                    <ul id="option_button">
+                        <li id = "course_option"><a href="#"><i class="fas fa-address-card"></i></a> Wyświetl studentów danego kursu</li>
+                        <li id = "avarage_stud_year_opt"><a href="#"><i class="fas fa-calculator"></i></a> Średnia studenta w danym roku</li>
+                        <li id = "avarage_stud_whole_studies"><a href="#"><i class="fas fa-calculator"></i></a> Średnia studenta z całych studiów</li>
+                        <li id = "avarage_course_year_opt"><a href="#"><i class="fas fa-calculator"></i></a> Średnia przedmiotu w danym roku</li>
+                    </ul>
+                </div>
+            
+                <div class="display">
+                    <div class="display_content" id="display">
+                        <h3>Tutaj będą pojawiać się wyniki wyszukiwania po wybraniu danych i opcji po lewej stronie.Jeśli nic się nie wyświetla, podano niewłaściwe dane.</h3>
+                    </div>
+                </div>
+            </div>
+           
+           
+        </div>
+        <div class="footer">
+      
+        </div>   
+         
+                            
+                        
+
+    </body>
+
+</html>
